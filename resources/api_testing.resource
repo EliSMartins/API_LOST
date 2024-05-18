@@ -76,15 +76,7 @@ Conferir os dados retornados
     Dictionary Should Contain Item    ${RESPOSTA_CONSULTA}    accessProfile   ADMIN
     Dictionary Should Contain Item    ${RESPOSTA_CONSULTA}    cpf             ${CPF}
     Dictionary Should Contain Item    ${RESPOSTA_CONSULTA}    _id             ${ID_USER}
-# Alterar perfil de acesso administrador de true para false
-#     ${alterar_perfil_usuario}    PUT On Session
-#     ...    alias=ApiLost   
-#     ...    url=/user/${ID_USER}
-#     ...    expected_status=200
-#     ...    data={"fullName:""Jose Oliveira","mail:${EMAIL_TESTE}", "password":"teste","administrador":"false"}
-#Excluir usuário criado
-#     ${excluir_usuario}    DELETE On Session    alias=ApiLost   url=/api/user/${ID_USER}    expected_status=200
-#     Set Test Variable    ${RESPSTA_CONSULTA_APOS_EXCLUSAO}    ${excluir_usuario.json()}
+
 
      
 
